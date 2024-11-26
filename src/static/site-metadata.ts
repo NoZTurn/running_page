@@ -20,12 +20,20 @@ const data: ISiteMetadataResult = {
       url: 'https://www.jiangkai.org',
     },
     {
-      name: 'Thanks',
-      url: 'https://github.com/yihong0618/running_page',
+      name: 'Garden',
+      url: 'https://garden.jiangkai.org',
+    },
+    {
+      name: 'Running',
+      url: 'https://run.jiangkai.org',
     },
     {
       name: 'About',
-      url: 'https://github.com/yihong0618/running_page/blob/master/README-CN.md',
+      url: 'https://garden.jiangkai.org/about',
+    },
+    {
+      name: 'Thanks',
+      url: 'https://github.com/yihong0618/running_page',
     },
   ],
 };
