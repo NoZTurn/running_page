@@ -15,10 +15,10 @@ const getBasePath = () => {
 };
 
 const data: ISiteMetadataResult = {
-  siteTitle: 'JiangKai\'s Running Records',
+  siteTitle: "JiangKai's Running Records",
   siteUrl: 'https://run.jiangkai.org',
   logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
-  description: 'JiangKai\'s Running Records',
+  description: "JiangKai's Running Records",
   navLinks: [
     {
       name: 'Summary',
