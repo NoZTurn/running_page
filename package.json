@@ -67,7 +67,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.33.2",
     "postcss": "^8.4.38",
-    "prettier": "^3.2.5",
+    "prettier": "^3.5.3",
+    "prettier-check": "^2.0.0",
     "prettier-plugin-tailwindcss": "^0.5.13",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2"
