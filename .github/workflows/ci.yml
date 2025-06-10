@@ -63,7 +63,7 @@ jobs:
 
       - name: Format code with Prettier
         run: pnpm run prettier --write
-        
+
       - name: Run check and build
         run: |
           pnpm run check
