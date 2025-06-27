@@ -23,12 +23,8 @@
     "react-map-gl": "^7.1.6",
     "react-router-dom": "^6.15.0",
     "recharts": "^2.15.2",
-<<<<<<< HEAD
     "viewport-mercator-project": "^7.0.4",
     "vite": "^6.3.5",
-=======
-    "vite": "^4.4.9",
->>>>>>> 5ca85557df27daa5fed2f332b12631be365bed7f
     "vite-plugin-svgr": "^3.2.0",
     "vite-tsconfig-paths": "^4.2.0"
   },
