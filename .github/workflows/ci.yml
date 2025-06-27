@@ -59,7 +59,7 @@ jobs:
         run: npm install -g corepack@latest && corepack enable pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Format code with Prettier
         run: pnpm run prettier --write
