@@ -59,6 +59,10 @@ jobs:
       - name: Enable corepack
         run: npm install -g corepack@latest && corepack enable pnpm
 
+      - name: Uninstall pnpm (if present)
+        run: |
+          npm uninstall -g pnpm || true
+
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
