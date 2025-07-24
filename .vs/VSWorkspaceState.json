@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\.github\\workflows\\run_data_sync.yml",
   "PreviewInSolutionExplorer": false
 }
