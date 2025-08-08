@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\.github\\workflows"
+    "\\.github\\workflows",
+    "\\src",
+    "\\src\\utils"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
