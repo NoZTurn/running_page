@@ -4,8 +4,9 @@
     "\\.github",
     "\\.github\\workflows",
     "\\src",
+    "\\src\\static",
     "\\src\\utils"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\src\\static\\activities.json",
   "PreviewInSolutionExplorer": false
 }

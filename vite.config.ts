@@ -42,7 +42,7 @@ export default defineConfig({
       },
     }),
   ],
-  base: './',
+  base: '../',
   define: {
     'import.meta.env.VERCEL': JSON.stringify(process.env.VERCEL),
   },
