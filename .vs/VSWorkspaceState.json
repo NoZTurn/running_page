@@ -3,10 +3,8 @@
     "",
     "\\.github",
     "\\.github\\workflows",
-    "\\src",
-    "\\src\\static",
-    "\\src\\utils"
+    "\\src\\static"
   ],
-  "SelectedNode": "\\src\\static\\activities.json",
+  "SelectedNode": "\\vite.config.ts",
   "PreviewInSolutionExplorer": false
 }
