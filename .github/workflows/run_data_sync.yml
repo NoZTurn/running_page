@@ -208,7 +208,7 @@ jobs:
           TITLE: ${{ env.TITLE }}
           TITLE_GRID: ${{ env.TITLE_GRID }}
           ATHLETE: ${{ env.ATHLETE }}
-          MIN_GRID_DISTANCE: ${{ env.MIN_GRID_DISTANCE }}
+          MIN_GRID_DISTANCE: "${{ env.MIN_GRID_DISTANCE }}"
         run: |
           python run_page/gen_svg.py --from-db --title '$TITLE' --type github --github-style 'align-firstday' --athlete '$ATHLETE' --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --min-distance 0.5
           python run_page/gen_svg.py --from-db --title '$TITLE_GRID' --type grid --athlete '$ATHLETE' --output assets/grid.svg --special-color yellow --special-color2 red --special-distance 20 --special-distance2 40 --use-localtime --min-distance '$MIN_GRID_DISTANCE'

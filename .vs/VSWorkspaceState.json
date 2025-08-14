@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\.github\\workflows",
-    "\\src\\static"
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\vite.config.ts",
+  "SelectedNode": "\\.github\\workflows\\run_data_sync.yml",
   "PreviewInSolutionExplorer": false
 }
