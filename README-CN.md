@@ -22,6 +22,7 @@
    - For old data: To include `Elevation Gain` for past activities, perform a full reimport.
    - To show the 'Elevation Gain' column, modify `SHOW_ELEVATION_GAIN` in `src/utils/const.ts`
    - note: `Elevation Gain` may be inaccurate. You can use Strava's "Correct Elevation" or Garmin's "Elev Corrections" feature for more precise data.
+6. 请使用自己的 mapxbox token 参考这个 [issue](https://github.com/yihong0618/running_page/issues/643)
 
 ![running_page](https://socialify.git.ci/yihong0618/running_page/image?description=1&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fshaonianche%2Fgallery%2Fmaster%2Frunning_page%2Frunning_page_logo_150*150.jpg&owner=1&pulls=1&stargazers=1&theme=Light)
 
@@ -171,7 +172,9 @@ R.I.P. 希望大家都能健康顺利的跑过终点，逝者安息。
 - **[Garmin_to_Strava(Using Garmin Run, Strava backup data)](#garmin_to_strava)**
 - **[Strava_to_Garmin(Using Strava Run, Garmin backup data)](#strava_to_garmin)**
 - **[Coros 高驰](#coros-高驰)**
-
+- **[iGPSPORT迹驰](#igpsport)**
+- **[Komoot](#komoot)**
+- 
 ## 视频教程
 
 - <https://www.youtube.com/watch?v=reLiY9p8EJk>
@@ -961,6 +964,21 @@ python run_page/coros_sync.py ${{ secrets.COROS_ACCOUNT }} ${{ secrets.COROS_PAS
 
 </details>
 
+### iGPSPORT
+
+<details>
+<summary>获取您的 iGPSPORT 迹驰 数据</summary>
+
+#### 在终端中输入以下命令
+
+```bash
+python run_page/igpsport_sync.py ${iGPSPORT_mobile} ${iGPSPORTS_password} --with-gpx
+```
+
+如果你想要 fit 格式的数据而非 gpx,可以将`--with-gpx`替换为`--with-fit`。
+
+</details>
+
 ### Keep_to_Strava
 
 <details>
@@ -989,6 +1007,19 @@ python run_page/keep_to_strava_sync.py ${your mobile} ${your password} ${client_
    ```yaml
    RUN_TYPE: keep_to_strava_sync
    ```
+
+</details>
+
+### Komoot
+
+<details>
+<summary>获取您的 Komoot 数据</summary>
+
+#### 在终端中输入以下命令
+
+```bash
+python3 run_page/komoot_sync.py 'your komoot email' 'password' --with-gpx
+```
 
 </details>
 
