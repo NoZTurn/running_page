@@ -28,29 +28,14 @@ if __name__ == "__main__":
         action="store_true",
         help="if garmin account is cn",
     )
-    file_type_group = parser.add_mutually_exclusive_group()
-    file_type_group.add_argument(
-        "--gpx",
-        dest="download_file_type",
-        action="store_const",
-        const="gpx",
-        help="download GPX files (not recommended for treadmill activities)",
-    )
-    file_type_group.add_argument(
+    parser.add_argument(
         "--tcx",
         dest="download_file_type",
         action="store_const",
         const="tcx",
-        help="download TCX files",
+        default="gpx",
+        help="to download personal documents or ebook",
     )
-    file_type_group.add_argument(
-        "--fit",
-        dest="download_file_type",
-        action="store_const",
-        const="fit",
-        help="download FIT files (recommended for Strava uploads)",
-    )
-    parser.set_defaults(download_file_type="fit")
     options = parser.parse_args()
     strava_client = make_strava_client(
         options.strava_client_id,

@@ -1,11 +1,10 @@
 /// <reference types="vite/client" />
+/// <reference types="vite-plugin-svgr/client" />
 
-declare module '@config' {
-  const config: Record<string, unknown>;
-  export default config;
-}
+declare module '*.svg' {
+  import type { FC, SVGProps } from 'react';
 
-declare module '*.yml' {
-  const content: Record<string, unknown>;
-  export default content;
+  export const ReactComponent: FC<SVGProps<SVGSVGElement>>;
+  const src: string;
+  export default src;
 }
