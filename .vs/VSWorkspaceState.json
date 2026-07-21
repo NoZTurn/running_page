@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
-    "\\.github\\workflows"
+    "\\.github\\workflows",
+    "\\src",
+    "\\src\\themes",
+    "\\src\\themes\\classic",
+    "\\src\\themes\\classic\\utils"
   ],
+  "SelectedNode": "\\src\\themes\\classic\\utils\\const.ts",
   "PreviewInSolutionExplorer": false
 }
