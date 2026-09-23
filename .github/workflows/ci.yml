@@ -25,8 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
-          pip install black
+          pip install -r requirements-dev.txt
 
       - name: Run GPX sync test
         run: |
@@ -34,8 +33,7 @@ jobs:
           python run_page/gpx_sync.py
 
       - name: Check formatting (black)
-        run: black .
-        # run: black . --diff --color && black . --check
+        run: black . --diff --color && black . --check
 
       - name: Lint with Ruff
         run: |
@@ -63,15 +61,8 @@ jobs:
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
 
-      - name: Uninstall pnpm (if present)
-        run: |
-          npm uninstall -g pnpm || true
-
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
-
-      - name: Format code with Prettier
-        run: pnpm run prettier --write
+        run: pnpm install
 
       - name: Run check and build
         run: |
