@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   python_lint_and_test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     strategy:
       max-parallel: 4
       matrix:
@@ -41,7 +41,7 @@ jobs:
           ruff check .
 
   node_lint_and_test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     strategy:
       matrix:
         node: [20, 22, 24]
