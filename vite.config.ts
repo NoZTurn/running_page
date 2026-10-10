@@ -81,7 +81,7 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/home/runner/work/',
+  base: '../',
   define: {
     'import.meta.env.VERCEL': JSON.stringify(process.env.VERCEL),
   },
